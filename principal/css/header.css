@@ -1,0 +1,207 @@
+/*el encabezado, aunque creo que debi juntar los primeros dos*/
+header{
+    width: 100%;
+    background-color:#993d3d ;
+
+}
+.encabezado-principal{
+
+    background-color: #332C2C;
+    color: var(--secondary-color);
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    border-bottom-right-radius:15px ;
+    border-bottom-left-radius: 15px;
+    width: 100%;
+    height: 168px;
+}
+.navbar{
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    color: var(--secondary-color);
+    border: solid 1px var(--borders-and-letters);
+
+}
+/*la imagen que es el logo, es algo largo*/
+.logo img{
+    width: 350px;
+    height: auto;
+    display: flex;
+    text-align: right;
+    align-self: center;
+}
+/*es el menu*/
+.menu{
+    flex: 1.2;
+    text-align: right;
+}
+.menu form{
+    display: inline-block;
+    position: relative;
+}
+/*la barra de busqueda*/
+.menu input[type="text"]{
+    padding: 8px 35px 8px 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+/*la imagen*/
+.menu input[type="image"]{
+    width: 20px;
+    height: auto;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+/*configuración de la posición de los botones*/
+.elementos-derecha{
+    flex: 1.2;
+    text-align: right;
+}
+/*botones, que se encuentran en la navbar*/
+.boton-de-cuenta {
+    border: 0;
+    color: var(--secondary-color);
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: #ccc;
+    color: black;
+    border-radius: 5px;
+}
+.boton-de-cuenta img {
+    height: 20px;
+    vertical-align: middle;
+    width: auto;
+    padding-right: 2px;
+}
+.boton-de-carro {
+    background-color:#ccc;
+    color: black;
+    border: 0;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.boton-de-carro img {
+    height: 20px;
+    vertical-align: middle;
+    width: auto;
+    padding-right: 2px;
+}
+.boton-de-cuenta, .boton-de-carro{
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+.boton-de-nosotros {
+    background: var(--botones);
+    border: 0;
+    color: #ccc;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.boton-de-condiciones {
+    background: var(--botones);
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.boton-de-politica {
+    background: var(--botones);
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.boton-de-inicio {
+    background: var(--botones);
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+.boton-de-nosotros, .boton-de-condiciones, .boton-de-politica, .boton-de-inicio{
+    margin-right: 10px;
+}
+/*segunda parte*/
+
+.opciones
+{
+    border: solid 1px var(--borders-and-letters);
+    height: 45px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ccc;
+    padding: 5px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+}
+.listado ul li
+{
+    list-style: none;
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s;
+}
+
+.listado  ul  li::after
+{
+        content: '';
+        background: #2374ed;
+        width: 100%;
+        height: 100%;
+        border-radius: 30px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50% , -50%);
+        z-index: -1;
+        opacity: 0;
+        transition: top 0.5s, opacity 0.5s;
+}
+.listado > li:hover
+{
+    color: black;
+}
+.listado > ul > li:hover::after
+{
+    top: 50%;
+    opacity: 1;
+}
+.listado ul li a {
+    text-decoration: none;
+    color: black;
+}

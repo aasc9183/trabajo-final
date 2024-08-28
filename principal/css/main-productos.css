@@ -1,0 +1,202 @@
+/*main*/
+body{
+  background-color: #993d3d;
+
+}
+main{
+    float: left;
+    box-sizing: border-box;
+    align-items: center;
+}
+h1{
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    color: var(--borders-and-letters);
+}
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500,700);
+
+.caja{
+    width: 900px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin-left: 25px;
+}
+
+/* Hover Card 
+.......................................................................*/
+div.catCard {
+  border: solid 5px #e9e9e9;
+  background: #d8d8d8;
+  width: 221px;
+  height: 400px;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+div.lowerCatCard {
+  position: absolute; 
+  background: #e9e9e9;
+  padding: 5px 5px; 
+  height: 200px;
+  -webkit-transition: all 0.6s ease;
+  -moz-transition:    all 0.6s ease;
+  -o-transition:      all 0.6s ease;
+  transition:         all 0.6s ease;
+}
+div.lowerCatCard:hover {
+  opacity: 0.95;
+  bottom: 0;
+  height: 390px;
+}
+div.catCard  div.lowerCatCard { 
+  left: 0; 
+  bottom: -3%;
+  width: 215px;
+}
+div.catCard:hover div.lowerCatCard { 
+  bottom: 0;
+}
+li.catCardList {
+  border-radius: 10px;
+  width:225px;
+  display: inline-block;
+  margin-left: 40px;
+  margin-top: 20px;
+}
+li.catCardList-last {
+  margin-right: 0;
+  width:225px;
+  display: inline-block;
+}
+ul.catCardList {
+  margin: 0;
+}
+#catCardButton {
+  position: absolute;
+  width: 190px;
+  bottom: 5px;
+  -webkit-transition: all 0.6s ease;
+  transition: all;
+  -moz-transition:    all 0.6s ease;
+  -o-transition:      all 0.6s ease;
+}
+div.lowerCatCard:hover #catCardButton {
+  bottom: 5px;
+}
+.startingPrice span {
+  font-size: 16px;
+  color: #c90c12;
+  font-weight: 300;
+}
+div.startingPrice {
+  margin-bottom: 5px;
+  color: #000;
+  font-weight: 300;
+}
+
+.catCard img {
+  box-sizing: border-box;
+  margin: auto;
+  display: flex;
+  vertical-align: middle;
+  align-self: center;
+  max-width: 221px;
+  max-height: 200px;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  justify-content: center;
+}
+.catCard > a{
+  display: flex;
+  vertical-align: middle;
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  align-content: center;
+  bottom: center;
+  align-items: center;
+  vertical-align: middle;
+  width: 221px;
+  height: 220px;
+  justify-content: center;
+}
+.catcard > a > img{
+  top: auto;
+  bottom: auto;
+  left: auto;
+  right: auto;
+  width: 100%;
+  vertical-align: middle;
+  align-self: center;
+  vertical-align: middle;
+  left: 0 auto;
+  right: 0 auto;
+  justify-content: center;
+}
+.catCard img:hover {
+  border: 1px solid #fff;
+}
+
+/* Button 
+.......................................................................*/
+.button {
+  cursor: pointer;
+  font-size: 14px !important;
+  color: #ffffff;
+  padding: 7px 10px !important;
+  text-decoration: none !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0 !important;
+  background: #000;
+  border: none;
+  border-bottom: solid 1px #c90c12;
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.button:hover {
+  background-color: #c90c12;
+  border: none;
+  border-bottom: solid 10px #000;
+  box-shadow: 0 2px 3px #a8a8a8;
+  transform: scale(1.04);
+  -webkit-transform: scale(1.04);
+  -moz-transform: scale(1.04);
+  -o-transform: scale(1.04);
+  -ms-transform: scale(1.05);
+}
+.button:active {
+  background: #000;
+}
+.button a {
+  color: #ffffff;
+  padding: 7px 30px !important;
+  text-decoration: none;
+}
+.button a:hover {
+  color: #ffffff;
+}
+.button:hover {
+	color: #fff;
+}
+/* main-información*/
+.general{
+    color: var(--borders-and-letters);
+    text-align: justify;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    font-size: 110%;
+    background-color: var(--secondary-color);
+}
+.general > h1{
+    color: var(--borders-and-letters);
+    text-align: center;
+    padding-top: 50px;
+}

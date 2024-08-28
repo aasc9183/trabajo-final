@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>redirigir</title>
+    <link rel="stylesheet" href="css/redirigir.css">
+</head>
+<body>
+    <main class="redirigir">
+        <h3>¿Estas seguro que quieres salir de Arsenal Gear ?</h3>
+            <a href="index.html">no estoy seguro</a>
+            <a href="../principal/principal.html">si, estoy seguro</a>
+    </main>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+        $('a').on('click', function(event){
+  // Prevent default link behavior
+  event.preventDefault();
+  event.stopPropagation();
+  var targetAttr = $(this).attr('target');
+  var linkHref = $(this).attr('href');
+
+  // Simulate Asynchronous delay
+  setTimeout(function(event){
+
+    // Redirect or open new  window based on target attr
+    if ( targetAttr === undefined ) {
+      // Default redirect
+      alert('redirect in same window');
+      window.location.href = linkHref;
+    } else if ( targetAttr === '_blank' ) {
+      // Open in new tab
+      alert('open in new tab');
+
+/*      var newWindow = window.open('about:blank', '_blank');
+      newWindow.location.href = linkHref;*/
+
+      window.open(linkHref, '_blank');
+
+    } else {
+      // Default redirect?
+    }
+
+  }, 500);
+
+});
+    </script>
+</body>
+</html>
